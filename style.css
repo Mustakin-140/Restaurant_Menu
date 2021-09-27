@@ -37,7 +37,7 @@ body {
 }
 
 .col-40{
-  flex-basis: 39%;
+  flex-basis: 30%;
   margin: 0 5px;
   padding: 0 5px;
 }
@@ -172,7 +172,11 @@ nav .icon-box i:hover{
 }
 
 .special_section img{
-  width:100%;
+  width:50%;
+  justify-content: right;
+  padding:10px 10px 10px 10px;
+
+
 }
 
 .special_section span{
@@ -192,8 +196,12 @@ nav .icon-box i:hover{
   margin-bottom: 10px;
 }
 
-.special_content  .btn  a{
+.special_content  .btn_section  a{
   text-decoration: none;
+}
+.special_content  .btn_section  a:hover{
+  transition: 0.6s;
+  background:#1abc9c;
 }
 /*dishes*/
 
@@ -207,7 +215,7 @@ nav .icon-box i:hover{
   text-align: center;
   background:#fff;
   border: 5px solid #ccc;
-  border-radius: 15px;
+  border-radius: 10px;
   padding: 10px;
   display: inline-block;
   overflow-x: hidden;
@@ -225,6 +233,7 @@ h3{
 
 .card_bottom{
   display:flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   margin-top: 15px;
 }
@@ -340,8 +349,23 @@ h3{
   justify-content: center;
 }
 
-.copyright span{
-  
-  margin: 0 auto;
+/*menu*/
+.menu_box .btn_section a{
+  text-decoration: none;
 
+}
+
+.menu_box .btn_section a:hover{
+  transition: 0.6s;
+  background:#1abc9c;
+}
+.others_section .container .others .location ul li{
+  display:flex;
+  justify-content:left;
+  align-content: left;
+  margin: 0 10px;
+  padding: 5px;
+}
+.others_section .container .others  ul li a{
+  text decoration: none;
 }
